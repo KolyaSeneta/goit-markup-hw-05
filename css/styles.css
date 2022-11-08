@@ -42,10 +42,11 @@ body {
     top: 8px;
     right:  8px;
     fill: #000000;
-
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--bg-white);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-closed:hover .icon-btn-modal,
@@ -172,7 +173,18 @@ header {
     padding-bottom: 32px;
 }
 
-
+.nav-studio {
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-portfolio {
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-contacts{
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .site-nav+.site-nav {
     margin-left: 50px;
@@ -208,10 +220,12 @@ header {
         border-radius: 2px;
         position: absolute;
         bottom: -1px;
+        letter-spacing: 0.02em;
        
 }
 .site-nav.portfolio {
     position: relative;
+    letter-spacing: 0.02em;
 }
 
 .site-nav.portfolio::after {
@@ -253,6 +267,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-phone,
@@ -332,6 +348,8 @@ header {
     align-items: center;
     padding: 10px 32px;
     margin-top: 30px;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -554,6 +572,8 @@ header {
     height: 44px;
     border-radius: 50%;
     fill: var(--fill-svg);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* background-color: var(--bg-white); */
@@ -639,12 +659,24 @@ header {
     align-items: baseline;
 }
 
+.footer-numd{
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-mail {
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-box {
     display: inline-block;
     align-items: center;
     justify-content: center;
 }
 
+.map {
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 .social {
@@ -669,6 +701,8 @@ header {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer-link:hover,
@@ -779,6 +813,8 @@ header {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: var(--fill-svg);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-clients {
@@ -825,6 +861,8 @@ header {
     border-radius: 4px;
     padding: 6px 25px;
     border: 0ch;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 
 }
