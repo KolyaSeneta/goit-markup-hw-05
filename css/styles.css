@@ -23,18 +23,45 @@ body {
         left: 0;
         z-index: 999;
         background-color: rgba(0, 0, 0, 0.2);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+            justify-content: center;
+            align-items: center;
         
 }
+
 .modal {
-    position: absolute;
-    width: 528px ;
+    /* position: absolute; */
+    width: 528px;
     height: 581px;
     background-color: var(--bg-white);
-    left: 50%;
+    /* left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.modal-index.is-hiden .modal {
+    /* transform: scale(1.5); */
+    transform: scale(1.5);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+
+}
+
+
+
+
+
 .btn-closed {
     position: absolute;
     width: 30px;
@@ -53,11 +80,7 @@ body {
 .btn-closed:focus .icon-btn-modal {
     fill: var(--secondary-color);
 }
-.modal-index.is-hidden {
-    visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-}
+
 /* .is-hidden {
     visibility:visible;
     opacity: 1;
@@ -897,15 +920,24 @@ header {
     height: 100%;
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.label-portfolio:hover .label-text{
+.portfoli-item:hover .label-text,
+.portfoli-item:focus .label-text  {
     transform: translateY(0%);
     overflow: auto;
 }
+
+
+
+/* .label-portfolio:focus .label-text {
+    transform: translateY(0%);
+    overflow: auto;
+} */
+
 
 .portfolio-title {
     color: var(--primary-text-color);
@@ -945,9 +977,12 @@ header {
     /* border: 1px solid #EEEEEE; */
     /* outline: 1px solid #EEEEEE;  */
     display: block;
+    
 }
-.portfoli-item:hover {
+.portfoli-item:hover,
+.portfoli-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .porfolio-box {
